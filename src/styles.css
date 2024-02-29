@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Helvetica';
+}
+.container, .container_flex  {
+ width: 85%;
+ margin: auto;
+}
+.container_flex {
+ display: flex;
+ justify-content: space-between;
+}
+body {
+ background-color: #E6EEDD;
+ overflow-x: hidden;
+}
+canvas {
+ width: 100vw;
+ height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+* {
+ color: white;
+}
+.toolbar {
+ background-color: #136c3c;
+ padding: 16px 0;
+}
+h2 {
+ font-family: 'EB Garamond';
+}
+.toolbar a {
+ text-decoration: none;
+ font-size: 17px;
+ margin-left: 33px;
+ transition: font-weight 0.7s ease;
+}
+.toolbar a:hover {
+ font-weight: 900;
+}
+.a_cont {
+ padding: 5px 0;
+}
+
+
+
+
+
+
