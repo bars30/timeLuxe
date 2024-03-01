@@ -173,7 +173,7 @@ export class HomeComponent {
     this.canvas.nativeElement.height = window.innerHeight;
 
     const context = this.canvas.nativeElement.getContext("2d");
-    const frameCount = 559;
+    const frameCount = 495;
     const currentFrame = (index: any) => `/assets/img/watch/${(index + 1).toString()}.jpg`;
     const fimg = new Image();
     fimg.src = '/assets/img/watch/2.jpg'

@@ -211,10 +211,62 @@ h1 span {
  font-size: 23px;
 }
 
-
-
-
-
+/* ------------------------ */
+.canvas_cont {
+ width: 100%;
+ position: relative !important;
+ overflow: hidden;
+}
+canvas {
+ /* height: fit-content;
+ overflow: hidden;
+ height: auto !important;
+ max-height: 100vh !important; */
+ height: auto !important;
+    max-height: 100vh !important;
+}
+.canvas_cont h2 {
+ position: absolute;
+ z-index: 2;
+ color: white;
+ font-size: 4rem;
+ top: 3%;
+ left: 8%;
+}
+.canvas_cont .f_p {
+ position: absolute;
+ top: 8.5%;
+ left: 10%;
+ color: white;
+ width: 45%;
+ background-color: #132857bf;
+ padding: 11px;
+ border-radius: 15px;
+}
+.canvas_cont .f_p2 {
+ position: absolute;
+ top: 25%;
+ left: 10%;
+ color: white;
+ width: 45%;
+ background-color: #132857bf;
+ padding: 11px;
+ border-radius: 15px;
+}
+.canvas_cont .f_p3 {
+ position: absolute;
+ top: 39%;
+ left: 10%;
+ color: white;
+ width: 45%;
+ background-color: #132857bf;
+ padding: 11px;
+ border-radius: 15px;
+}
+.pin-spacer {
+ height: auto !important; 
+ padding: 0 !important;
+}
 
 
 
