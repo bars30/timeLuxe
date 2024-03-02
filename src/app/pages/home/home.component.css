@@ -234,34 +234,34 @@ canvas {
  left: 8%;
 }
 .canvas_cont .f_p {
- position: absolute;
- top: 8.5%;
- left: 10%;
- color: white;
- width: 45%;
- background-color: #132857bf;
- padding: 11px;
- border-radius: 15px;
+    position: absolute;
+    top: 20.5%;
+    left: 10%;
+    color: white;
+    width: 45%;
+    background-color: #4a91abde;
+    padding: 11px;
+    border-radius: 15px;
 }
 .canvas_cont .f_p2 {
- position: absolute;
- top: 25%;
- left: 10%;
- color: white;
- width: 45%;
- background-color: #132857bf;
- padding: 11px;
- border-radius: 15px;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    color: #377c58;
+    width: 45%;
+    background-color: #dbe1df;
+    padding: 11px;
+    border-radius: 15px;
 }
 .canvas_cont .f_p3 {
- position: absolute;
- top: 39%;
- left: 10%;
- color: white;
- width: 45%;
- background-color: #132857bf;
- padding: 11px;
- border-radius: 15px;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    color: white;
+    width: 45%;
+    background-color: #064421a8;
+    padding: 11px;
+    border-radius: 11px;
 }
 .pin-spacer {
  height: auto !important; 
