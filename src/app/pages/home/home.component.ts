@@ -179,7 +179,7 @@ export class HomeComponent {
     fimg.src = '/assets/img/watch/2.jpg'
     const images = [fimg];
     let ball = {frame: 0}
-    console.log(images);
+    // console.log(images);
     
     for(let i = 0; i < frameCount; i++){
       const img = new Image();
@@ -202,7 +202,7 @@ export class HomeComponent {
      })
 
      images[0].onload = render;
-     console.log(images);
+    //  console.log(images);
      gsap.fromTo(
       ".ball-text",
       {

@@ -1,0 +1,40 @@
+<div class="poster">
+ <img src="/assets/img/store/watch-poster4.png" alt="">
+</div>
+
+<div class="bestselled">
+ <div class="container">
+  <h2 class="bestselled_gen_header">Top-Selling Watches</h2>
+  <h3 class="bestselled_header">A Comprehensive Review of the Most Popular Timepieces on the Market</h3>
+ </div>
+ <div class="bestselled_cont">
+  <div class="item" *ngFor="let watch of bestselledWatches">
+   <h2>{{watch.model}}</h2>
+   <img [src]="watch.img" alt="image of watch">
+   <p>{{watch.price}}</p>
+  </div>
+ </div>
+</div>
+<div class="watches">
+ <h2 class="bestselled_gen_header">Comprehensive List of Watches from Top Brands</h2>
+ <div class="container">
+  <form>
+   <label><input type="radio" name="brand">Rolex</label>
+   <label><input type="radio" name="brand">Patek Philippe</label>
+   <label><input type="radio" name="brand">Audemars Piguet</label>
+   <label><input type="radio" name="brand">Cartier</label>
+   <label><input type="radio" name="brand">Hublot</label>
+   <label><input type="radio" name="brand">Breitling</label>
+   <label><input type="radio" name="brand">TAG Heuer</label>
+   <label><input type="radio" name="brand">Jaeger-LeCoultre</label>
+   <label><input type="radio" name="brand">Omega</label>
+  </form>
+  <mat-radio-group>
+   <mat-radio-button value="option1">Option 1</mat-radio-button>
+   <mat-radio-button value="option2">Option 2</mat-radio-button>
+   <mat-radio-button value="option3">Option 3</mat-radio-button>
+ </mat-radio-group>
+ </div>
+</div>
+
+

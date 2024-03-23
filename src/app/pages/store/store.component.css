@@ -1,0 +1,81 @@
+.poster {
+ width: 100%;
+}
+.poster img {
+ width: 100%;
+}
+.bestselled {
+ margin: 55px 0;
+}
+.bestselled_gen_header{
+ text-align: center;
+ font-size: 38px;
+ font-family: 'EB Garamond';
+ color: #463209;
+ margin: 0 0 9px;
+} 
+.bestselled_header {
+ text-align: center;
+ font-family: 'EB Garamond';
+ color: #463209;
+ margin-bottom: 46px;
+ font-size: 21px;
+} 
+.bestselled_cont {
+ width: 87%;
+ display: flex;
+ margin: auto;
+ justify-content: space-between;
+}
+
+.bestselled_cont .item img {
+ width: 100%;
+ border-radius: 8px;
+}
+.bestselled_cont .item {
+ width: 18%;
+ padding: 11px 19px;
+ background-color: #becdbbad;
+ border-radius: 12px;
+ overflow: hidden;
+ position: relative;
+ transition: all 0.9s ease-in;
+}
+.bestselled_cont .item:hover {
+ background-color: #a5b1a0;
+ border-radius: 7px;
+}
+.bestselled_cont .item:hover p {
+ color: white;
+}
+.bestselled_cont .item:hover h2 {
+ color: white;
+}
+.bestselled_cont .item h2 {
+ font-size: 19px;
+ height: 53px;
+ text-align: center;
+ font-family: 'EB Garamond';
+ font-weight: 900;
+ color: #1f2a23;
+ transition: all 0.8s ease-in;
+}
+
+.bestselled_cont .item p {
+ color: #768679;
+ font-weight: 900;
+ font-size: 18px;
+ padding-top: 2px;
+ transition: all 0.8s ease-in;
+}
+.watches h2 {
+ color: #186e47;
+}
+
+
+
+
+
+
+
+
