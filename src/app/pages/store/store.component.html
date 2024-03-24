@@ -19,22 +19,97 @@
  <h2 class="bestselled_gen_header">Comprehensive List of Watches from Top Brands</h2>
  <div class="container">
   <form>
-   <label><input type="radio" name="brand">Rolex</label>
-   <label><input type="radio" name="brand">Patek Philippe</label>
-   <label><input type="radio" name="brand">Audemars Piguet</label>
-   <label><input type="radio" name="brand">Cartier</label>
-   <label><input type="radio" name="brand">Hublot</label>
-   <label><input type="radio" name="brand">Breitling</label>
-   <label><input type="radio" name="brand">TAG Heuer</label>
-   <label><input type="radio" name="brand">Jaeger-LeCoultre</label>
-   <label><input type="radio" name="brand">Omega</label>
+   <label>
+    <input type="radio" name="brand" value="Rolex" checked  [(ngModel)]="selectedBrand">
+    <span>Rolex</span>
+  </label>
+   <label>
+    <input type="radio" name="brand" value="Patek Philippe"  [(ngModel)]="selectedBrand">
+    <span>Patek Philippe</span>
+  </label>
+   <label>
+    <input type="radio" name="brand" value="Audemars Piguet" [(ngModel)]="selectedBrand">
+    <span>Audemars Piguet</span>
+  </label>
+   <label>
+    <input type="radio" name="brand" value="Cartier" [(ngModel)]="selectedBrand">
+    <span>Cartier</span>
+  </label>
+   <label>
+    <input type="radio" name="brand" value="Hublot" [(ngModel)]="selectedBrand">
+    <span>Hublot</span>
+  </label>
+   <label>
+    <input type="radio" name="brand" value="Breitling"  [(ngModel)]="selectedBrand">
+    <span>Breitling</span>
+  </label>
+   <label>
+    <input type="radio" name="brand" value="TAG Heuer"  [(ngModel)]="selectedBrand">
+    <span>TAG Heuer</span>
+  </label>
+   <label>
+    <input type="radio" name="brand" value="Jaeger-LeCoultre"  [(ngModel)]="selectedBrand">
+    <span>Jaeger-LeCoultre</span>
+  </label>
+   <label>
+    <input type="radio" name="brand" value="Omega"  [(ngModel)]="selectedBrand">
+    <span>Omega</span>
+  </label>
   </form>
-  <mat-radio-group>
-   <mat-radio-button value="option1">Option 1</mat-radio-button>
-   <mat-radio-button value="option2">Option 2</mat-radio-button>
-   <mat-radio-button value="option3">Option 3</mat-radio-button>
- </mat-radio-group>
+  <div class="watch_header">
+    <h2>{{ rolexHeader.myheader1 }}</h2>
+    <h3>{{ rolexHeader.myheader2 }}</h3>
+  </div>
+  <div class="watches_cont">
+    <div class="rolex">
+      <div class="coll">
+        <div class="item" *ngFor="let item of collections[0]?.cont">
+          <h3>{{item.model}}</h3>
+          <div class="img_cont">
+            <img [src]="item.img1" alt="">
+          </div>
+          <a (click)="showDiscoverComp()">Discover more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="watch_header">
+    <h2>{{ rolexHeader.myheader3 }}</h2>
+    <h3>{{ rolexHeader.myheader4 }}</h3>
+  </div>
+  <div class="watches_cont">
+    <div class="rolex">
+      <div class="coll">
+        <div class="item" *ngFor="let item of collections[1]?.cont">
+          <h3>{{item.model}}</h3>
+          <div class="img_cont">
+            <img [src]="item.img" alt="">
+          </div>
+          <a (click)="showDiscoverComp()">Discover more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="watch_header">
+    <h2>{{ rolexHeader.myheader5 }}</h2>
+    <h3>{{ rolexHeader.myheader6 }}</h3>
+  </div>
+  <div class="watches_cont">
+    <div class="rolex">
+      <div class="coll">
+        <div class="item" *ngFor="let item of collections[2]?.cont">
+          <h3>{{item.model}}</h3>
+          <div class="img_cont">
+            <img [src]="item.img" alt="">
+          </div>
+          <a (click)="showDiscoverComp()">Discover more</a>
+        </div>
+      </div>
+    </div>
+  </div>
  </div>
 </div>
+<button (click)="showl()">Show the value of selectedBrand SDFGTDRFG</button>
 
 
+<app-discover (sendmes)="showDiscoverComp()" *ngIf="showDiscoverComponent"></app-discover>
