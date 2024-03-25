@@ -116,7 +116,9 @@ form {
 }
 .coll {
  display: flex;
- justify-content: space-between;
+ justify-content: start;
+ flex-wrap: wrap;
+ 
 }
 .coll .item  {
  width: 23%;
@@ -125,6 +127,8 @@ form {
  border-radius: 12px;
  overflow: hidden;
  box-shadow: 3px 2px 15px #8080807b;
+ margin-bottom: 25px;
+ margin-right: 2%;
 }
 .coll .item .img_cont {
  width: 100%;

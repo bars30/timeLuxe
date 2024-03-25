@@ -18,6 +18,24 @@ export const enviroenment = {
    },
    gmtmasterll: {
     get: host + '/rolex/coll/gmtmasterll'
+   },
+   daydate: {
+    get: host + '/rolex/coll/daydate'
+   },
+   cosmographdaytona : {
+    get: host + '/rolex/coll/cosmographdaytona'
+   },
+   oysterperpetual : {
+    get: host + '/rolex/coll/oysterperpetual'
+   },
+   yachtmaster : {
+    get: host + '/rolex/coll/yachtmaster'
+   },
+   seadweller : {
+    get: host + '/rolex/coll/seadweller'
+   },
+   deepsea : {
+    get: host + '/rolex/coll/deepsea'
    }
   }
  }

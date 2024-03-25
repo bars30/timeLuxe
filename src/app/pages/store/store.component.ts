@@ -17,12 +17,7 @@ import { DiscoverComponent } from 'src/app/components/discover/discover.componen
 })
 export class StoreComponent {
   rolexHeader: any =  {
-    myheader1: "",
-    myheader2: "",
-    myheader3: "",
-    myheader4:  "",
-    myheader5: "",
-    myheader6:  ""
+    
   }
   showDiscoverComponent: boolean = false;
   selectedBrand:any = "Rolex";
@@ -65,15 +60,40 @@ export class StoreComponent {
       this.rolexHeader.myheader5 = this.collections[2]?.watches[0]?.collection
       this.rolexHeader.myheader6 = this.collections[2]?.watches[0]?.desription
     })
+    this.req.getData<RequestModS>(enviroenment.collection.rolex.daydate.get).subscribe((res)=>{
+      this.collections[3] = res;
+      this.rolexHeader.myheader7 = this.collections[3]?.watches[0]?.collection
+      this.rolexHeader.myheader8 = this.collections[3]?.watches[0]?.desription
+    })
+    this.req.getData<RequestModS>(enviroenment.collection.rolex.cosmographdaytona.get).subscribe((res)=>{
+      this.collections[4] = res;
+      this.rolexHeader.myheader9 = this.collections[4]?.watches[0]?.collection
+      this.rolexHeader.myheader10 = this.collections[4]?.watches[0]?.desription
+    })
+    this.req.getData<RequestModS>(enviroenment.collection.rolex.oysterperpetual.get).subscribe((res)=>{
+      this.collections[5] = res;
+      this.rolexHeader.myheader11 = this.collections[5]?.watches[0]?.collection
+      this.rolexHeader.myheader12 = this.collections[5]?.watches[0]?.desription
+    })
+    this.req.getData<RequestModS>(enviroenment.collection.rolex.yachtmaster.get).subscribe((res)=>{
+      this.collections[6] = res;
+      this.rolexHeader.myheader13 = this.collections[6]?.watches[0]?.collection
+      this.rolexHeader.myheader14 = this.collections[6]?.watches[0]?.desription
+    })
+    this.req.getData<RequestModS>(enviroenment.collection.rolex.seadweller.get).subscribe((res)=>{
+      this.collections[7] = res;
+      this.rolexHeader.myheader15 = this.collections[7]?.watches[0]?.collection
+      this.rolexHeader.myheader16 = this.collections[7]?.watches[0]?.desription
+    })
+    this.req.getData<RequestModS>(enviroenment.collection.rolex.deepsea.get).subscribe((res)=>{
+      this.collections[8] = res;
+      this.rolexHeader.myheader17 = this.collections[8]?.watches[0]?.collection
+      this.rolexHeader.myheader18 = this.collections[8]?.watches[0]?.desription
+    })
   }
   showl(){
-    console.log('nervvvvvvvvv');
-    console.log(this.collections[0].watches[0].collection);
-    console.log(this.collections[0]?.watches[0]?.desription);
-    console.log(this.collections[1].watches[0].collection);
-    console.log(this.collections[1]?.watches[0]?.desription);
-    console.log('nervvvvvvvvv');
-    
+  // console.log(this.collections);
+  
     
   }
   showDiscoverComp(){
