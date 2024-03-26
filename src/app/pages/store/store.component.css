@@ -186,12 +186,29 @@ color: gray;
 .watch_header h3 {
  font-size: 17px;
 }
+.coll .item h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: .03125em;
+    margin: 0 0 16px;
+    text-align: center;
+    background-color: #eeeef3;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    padding: 3px 18px;
+    border-radius: 8px;
+}
 .watches {
     /* background-color: #e6eedd; */
     background-color: #adbbce;
 }
 
-
+.spinner_cont {
+    text-align: center;
+}
 
 
 

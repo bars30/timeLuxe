@@ -36,8 +36,26 @@ export const enviroenment = {
    },
    deepsea : {
     get: host + '/rolex/coll/deepsea'
+   },
+   airking: {
+    get: host + '/rolex/coll/airking'
+   },
+   explorer: {
+    get: host + '/rolex/coll/explorer'
+   },
+   adydatejust: {
+    get: host + '/rolex/coll/adydatejust'
+   },
+   skydweller: {
+    get: host + '/rolex/coll/skydweller'
+   },
+   '1908': {
+    get: host + '/rolex/coll/1908'
    }
   }
+ },
+ descrip: (coll: any, idm: any)=>{
+  return host + '/' + coll + '/' + idm
  }
 }
 

@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { StoreComponent } from './pages/store/store.component';
 import { AdminComponent } from './adminpages/admin/admin.component';
 import { BestselledComponent } from './adminpages/bestselled/bestselled.component';
+import { RolexStoreComponent } from './components/storecompo/rolex-store/rolex-store.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,12 @@ const routes: Routes = [
       },
       {
         path: 'store',
-        component: StoreComponent
+        component: StoreComponent,
+        
+      },
+      {
+        path: 'rolexstore',
+        component: RolexStoreComponent
       }
     ]
   },

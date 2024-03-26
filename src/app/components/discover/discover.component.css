@@ -1,6 +1,8 @@
-img {
+/* img {
  width: 100%;
-}
+} */
+
+
 .discover {
  width: 100%;
  background-color: aliceblue;
@@ -17,8 +19,33 @@ img {
  font-size: 40px;
  cursor: pointer;
 }
+.swiper-container {
+ width: 100%;
+ height: 100%;
+}
+.swiper-slide img {
+ width: 100%;
+ height: auto;
+}
+.carousel {
+ display: flex;
+ overflow-x: scroll;
+ scroll-snap-type: x mandatory;
+ -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
 
+.carousel img {
+ flex: 0 0 auto;
+ width: 25%;
+ scroll-snap-align: start;
+}
+.left {
+ left: 0;
+}
 
+.right {
+ right: 0;
+}
 
 
 

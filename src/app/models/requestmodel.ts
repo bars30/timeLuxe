@@ -1,4 +1,5 @@
 export interface RequestModS  {
  "message": string,
- "watches": any
+ "watches": any,
+ cont?: any
 }

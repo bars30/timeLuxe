@@ -1,0 +1,16 @@
+<div class="spinner_cont">
+  <img src="../../../assets/img/details/spinner3.gif" *ngIf="showSpinner" alt="">
+</div>
+<div class="rolex">
+ <div class="coll">
+   <div class="item" *ngFor="let item of collectionsRolex">
+     <h4>{{item.collection}}</h4>
+     <h3>{{item.model}}</h3>
+     <div class="img_cont">
+       <img [src]="item.img || item.img1" alt="">
+     </div>
+     <a target="_self"
+     href="https://www.rolex.com/ru/watches/datejust/m126233-0039#/m126233-0039/dial">Discover more</a>
+   </div>
+ </div>
+</div>
