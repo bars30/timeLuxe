@@ -1,0 +1,67 @@
+<div class="choose">
+ <button (click)="show(1)">Code 11.59</button>
+ <button (click)="show(2)">Royal Oak</button>
+ <button (click)="show(3)">Royal Oak Offshore</button>
+ <button (click)="show(4)">Royal Oak Concept</button>
+</div>
+<div class="rolex" *ngIf="show1">
+ <div class="coll">
+   <div class="item" *ngFor="let item of collectionsAudemarsPiguet">
+     <h4>{{item.code}}</h4>
+     <!-- <h3>{{item.coo}}</h3> -->
+    
+     <div class="img_cont">
+       <img [src]="item.img || item.img1" alt="">
+     </div>
+     <h5>{{item.descrip}}</h5>
+     <h5>{{item.cont}}</h5>
+   </div>
+ </div>
+ </div>
+
+ <div class="rolex" *ngIf="show2">
+  <div class="coll">
+    <div class="item" *ngFor="let item of collectionsAudemarsPiguetRoyalOak">
+      <h4>{{item.code}}</h4>
+      <!-- <h3>{{item.coo}}</h3> -->
+     
+      <div class="img_cont">
+        <img [src]="item.img || item.img1" alt="">
+      </div>
+      <h5>{{item.descrip}}</h5>
+      <h5>{{item.cont}}</h5>
+    </div>
+  </div>
+  </div>
+
+  <div class="rolex" *ngIf="show3">
+   <div class="coll">
+     <div class="item" *ngFor="let item of collectionsAudemarsPiguetRoyalOakOffshore">
+       <h4>{{item.code}}</h4>
+       <!-- <h3>{{item.coo}}</h3> -->
+      
+       <div class="img_cont">
+         <img [src]="item.img || item.img1" alt="">
+       </div>
+       <h5>{{item.descrip}}</h5>
+       <h5>{{item.cont}}</h5>
+     </div>
+   </div>
+   </div>
+
+   <div class="rolex" *ngIf="show4">
+    <div class="coll">
+      <div class="item" *ngFor="let item of collectionsAudemarsPiguetRoyalOakConcept">
+        <h4>{{item.code}}</h4>
+        <!-- <h3>{{item.coo}}</h3> -->
+       
+        <div class="img_cont">
+          <img [src]="item.img || item.img1" alt="">
+        </div>
+        <h5>{{item.descrip}}</h5>
+        <h5>{{item.cont}}</h5>
+      </div>
+    </div>
+    </div>
+
+<button (click)="log()">df</button>

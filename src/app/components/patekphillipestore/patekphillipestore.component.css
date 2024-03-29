@@ -1,0 +1,118 @@
+form {
+ padding-top: 15px;
+ display: flex;
+ flex-wrap: wrap;
+}
+.coll {
+ display: flex;
+ justify-content: start;
+ flex-wrap: wrap;
+ 
+}
+.coll .item  {
+ width: 23%;
+ padding: 11px;
+ background-color: white;
+ border-radius: 12px;
+ overflow: hidden;
+ box-shadow: 3px 2px 15px #8080807b;
+ margin-bottom: 25px;
+ margin-right: 2%;
+}
+.coll .item .img_cont {
+ width: 100%;
+ overflow: hidden;
+ border-radius: 8px;
+}
+.coll .item .img_cont img {
+
+ width: 96%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    transition: .25s ease;
+}
+.coll .item  h3 {
+    font-family: 'EB Garamond';
+    font-weight: 800;
+    font-size: 23px;
+    text-align: center;
+    color: #144126;
+    margin-bottom: 3px;
+    transition: all 0.25s ease;
+    margin-top: 5px;
+}
+.coll .item:hover img {
+ transform: scale(1.04);
+}
+.coll .item:hover a {
+    background: linear-gradient(80deg, #80808045, #ffffff36, #80808044, #ffffff40);
+}
+.coll .item:hover h3 {
+color: gray;
+}
+.coll .item a {
+ padding: 12px 0;
+    display: block;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 13px;
+    margin: 9px 3px 2px;
+    text-decoration: none;
+    color: #636a60;
+    font-weight: 900;
+    background: linear-gradient(45deg, #80808045, #ffffff36, #80808044, #ffffff40);
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+.watch_header h2 {
+ font-family: 'EB Garamond';
+ font-weight: 900;
+ font-size: 37px;
+ margin-top: 15px;
+ margin-bottom: 8px;
+}
+.watch_header h3 {
+ font-size: 17px;
+}
+.coll .item h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: .03125em;
+    margin: 0 0 16px;
+    text-align: center;
+    background-color: #eeeef3;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    padding: 3px 18px;
+    border-radius: 8px;
+}
+.watches {
+    /* background-color: #e6eedd; */
+    background-color: #adbbce;
+}
+h5 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.reminder a {
+    display: block;
+    margin: auto;
+    padding: 8px 26px;
+    background-color: white;
+    text-decoration: none;
+    width: fit-content;
+    font-weight: 900;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #616872;
+    margin-bottom: 15px;
+}
+
+
+
+

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatRadioModule} from '@angular/material/radio';
+import { PatekphillipestoreComponent } from './components/patekphillipestore/patekphillipestore.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {MatRadioModule} from '@angular/material/radio';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatRadioModule
+    MatRadioModule,
+    PatekphillipestoreComponent
   ],
   providers: [], 
   bootstrap: [AppComponent]

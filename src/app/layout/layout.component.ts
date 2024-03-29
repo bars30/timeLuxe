@@ -12,5 +12,5 @@ import { FooterComponent } from '../components/footer/footer.component';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent {
-
+ 
 }

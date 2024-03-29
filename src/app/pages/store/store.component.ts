@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RequestService } from 'src/app/services/request.service';
 import { Bestselled } from 'src/app/models/bestselled';
@@ -9,16 +9,28 @@ import { FormsModule } from '@angular/forms';
 import { DiscoverComponent } from 'src/app/components/discover/discover.component';
 import { RouterLink } from '@angular/router';
 import { RolexStoreComponent } from 'src/app/components/storecompo/rolex-store/rolex-store.component';
+import { PatekphillipestoreComponent } from 'src/app/components/patekphillipestore/patekphillipestore.component';
+import { RolexStoreService } from 'src/app/services/rolex-store.service';
+import { PatekphilippeservService } from 'src/app/services/patekphilippeserv.service';
+import { AudemarsPiguetComponent } from 'src/app/components/audemars-piguet/audemars-piguet.component';
+import { CartierComponent } from 'src/app/components/cartier/cartier.component';
+import { JaegerComponent } from 'src/app/components/jaeger/jaeger.component';
 
 @Component({
   selector: 'app-store',
   standalone: true,
   imports: [CommonModule, MatRadioModule, FormsModule, DiscoverComponent 
-  , RouterLink, RolexStoreComponent],
+  , RouterLink, RolexStoreComponent, PatekphillipestoreComponent,
+  AudemarsPiguetComponent, CartierComponent, JaegerComponent],
   templateUrl: './store.component.html',
   styleUrls: ['./store.component.css']
 })
 export class StoreComponent {
+  
+  showRolexStore: boolean = true;
+  loadNextHttp: boolean = false;
+
+
   coll: any;
   idm: any;
   rolexHeader: any =  {
@@ -32,6 +44,10 @@ export class StoreComponent {
     message: 'gyh'
   };
   collectionsRolex: any = []
+  collectionsPatekPhillipe: any = []
+  collectionsAudemarsPiguet:  any = []
+  collectionsCartier:  any = []
+  collectionsJaeger: any = []
 
   collections:any =  [
      []
@@ -39,48 +55,66 @@ export class StoreComponent {
   showSpinner: boolean = true
 
 
-  constructor(private req: RequestService){
+  constructor(private req: RequestService,
+    private rolexSer: RolexStoreService,
+    private patekPhillipeServ: PatekphilippeservService){
     
   }
   i: number = 0;
-  getDataRolex(url: any){
-    this.req.getData<RequestModS>(url).subscribe((res)=>{
-      console.log(res);
-      for (let index = 0; index < res.cont.length; index++) {
-        res.cont[index].collection = res.watches[0].collection
-        this.collectionsRolex.push(res.cont[index])
-      }
-      this.showSpinner = false;
-      console.log(this.i + '' + url);
-      this.i++
-    })
-  }
 
   ngOnInit(){
+    this.loadNextHttp = this.rolexSer.loadNext
+
     this.req.getData<RequestModS>(enviroenment.bestselledwatches.get).subscribe((res)=>{
       this.stupArray = res;
       this.bestselledWatches = this.stupArray.watches
     })
+    // this.getDataRolex()
+    this.collectionsRolex = this.rolexSer.collectionsRolex
 
-    
-    this.getDataRolex(enviroenment.collection.rolex['1908'].get)
-    this.getDataRolex(enviroenment.collection.rolex.skydweller.get)
-    this.getDataRolex(enviroenment.collection.rolex.adydatejust.get)
-    this.getDataRolex(enviroenment.collection.rolex.explorer.get)
-    this.getDataRolex(enviroenment.collection.rolex.airking.get)
-    this.getDataRolex(enviroenment.collection.rolex.deepsea.get)
-    this.getDataRolex(enviroenment.collection.rolex.seadweller.get)
-    this.getDataRolex(enviroenment.collection.rolex.yachtmaster.get)
-    this.getDataRolex(enviroenment.collection.rolex.oysterperpetual.get)
-    this.getDataRolex(enviroenment.collection.rolex.cosmographdaytona.get)
-    this.getDataRolex(enviroenment.collection.rolex.daydate.get)
-    this.getDataRolex(enviroenment.collection.rolex.gmtmasterll.get)
-    this.getDataRolex(enviroenment.collection.rolex.submariner.get)
-    this.getDataRolex(enviroenment.collection.rolex.datejust.get)
-    
+    this.rolexSer.loadNext$.subscribe((loadNext) => {
+      if (loadNext) {
+        this.collectionsPatekPhillipe = this.patekPhillipeServ.patekphilippecoll
+
+        
+          this.req.getData<RequestModS>(enviroenment.patekphillipe.grandcomplications.get).subscribe((res)=>{
+            console.log(res);
+            for (let index = 0; index < res.cont.length; index++) {
+              this.collectionsPatekPhillipe.push(res.cont[index])
+            }   
+            console.log('Patek Philippe');
+            
+          })
+          this.req.getData<RequestModS>(enviroenment.audemarspiguet.get).subscribe((res)=>{
+            console.log(res);
+            for (let index = 0; index < res.cont.length; index++) {
+              this.collectionsAudemarsPiguet.push(res.cont[index])
+            }   
+            })
+          
+            this.req.getData<RequestModS>(enviroenment.cartier.tank.get).subscribe((res)=>{
+              console.log(res);
+              for (let index = 0; index < res.cont.length; index++) {
+                this.collectionsCartier.push(res.cont[index])
+              }   
+              })
+
+              this.req.getData<RequestModS>(enviroenment.jaeger.reservo.get).subscribe((res)=>{
+                console.log(res);
+                for (let index = 0; index < res.cont.length; index++) {
+                  this.collectionsJaeger.push(res.cont[index])
+                }   
+                })
+  
+      }
+      
+      
+      
+    });
+
   }
   showl(){
-  console.log(this.collectionsRolex);
+  console.log(this.collectionsCartier);
   
     
   }

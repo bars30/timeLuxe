@@ -1,0 +1,18 @@
+
+<div class="rolex" *ngIf="general">
+<div class="coll">
+  <div class="item" *ngFor="let item of collectionsPatekPhillipe">
+    <h4>{{item.collection}}</h4>
+    <h3>{{item.model}}</h3>
+    <h5>{{item.descrip}}</h5>
+    <div class="img_cont">
+      <img [src]="item.img || item.img1" alt="">
+    </div>
+    <a target="_self"
+    [href]="item.url">Discover more</a>
+  </div>
+</div>
+</div>
+<div class="reminder">
+  <a target="_self" href="https://www.patek.com/en/collection/grand-complications?redirect=/en/%d0%ba%d0%be%d0%bb%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d0%b8/grand-complications"> For more...</a>
+</div>

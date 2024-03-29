@@ -1,0 +1,21 @@
+<div class="choose">
+  <button (click)="show(1)">Tank</button>
+  <button (click)="show(2)">Santos De Cartier</button>
+  <button (click)="show(3)">PANTHÈRE DE CARTIER</button>
+  <button (click)="show(4)">BALLON DE CARTIER</button>
+  <button (click)="show(5)">BAIGNOIRE</button>
+  <button (click)="show(6)">RONDE DE CARTIER</button>
+ </div>
+<div class="rolex" *ngIf="show1">
+ <div class="coll">
+   <div class="item" *ngFor="let item of collectionsCartierAll">
+     <h4>{{item.model}}</h4>
+     <!-- <h3>{{item.coo}}</h3> -->
+    
+     <div class="img_cont">
+       <img [src]="item.img || item.img1" alt="">
+     </div>
+     <h5>{{item.descrip}}</h5>
+   </div>
+ </div>
+ </div>

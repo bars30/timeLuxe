@@ -53,6 +53,52 @@ export const enviroenment = {
     get: host + '/rolex/coll/1908'
    }
   }
+ },
+ patekphillipe: {
+  grandcomplications: {
+   get: host + '/patekphilippe/coll/grandcomplic'
+  }
+ },
+ audemarspiguet: {
+  get: host + '/audemarspiguet/watches',
+  royalOak: {
+   get: host + '/audemarspiguet/watches/royaloak'
+  },
+  royaloakoffshore: {
+   get: host + '/audemarspiguet/watches/royaloakoffshore'
+  },
+  royaloakconcept: {
+   get: host + '/audemarspiguet/watches/concept'
+  }
+ },
+ cartier: {
+  tank: {
+   get: host + '/cartier/tank'
+  },
+  antosde: {
+   get: host + '/cartier/antosde'
+  }, 
+  panterede: {
+   get: host + '/cartier/panterede'
+  },
+  ballonde: {
+   get: host + '/cartier/ballonde'
+  },
+  baignoire: {
+   get: host + '/cartier/baignoire'
+  },
+  ronde: {
+   get: host + '/cartier/ronde'
+  }
+ },
+ jaeger: {
+  reservo: {
+   get: host + '/jaeger/reservo'
+  }
+ },
+
+ descrip: (coll: any, idm: any)=>{
+  return host + '/' + coll + '/' + idm
  }
 }
 
