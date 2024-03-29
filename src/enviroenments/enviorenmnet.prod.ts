@@ -94,6 +94,9 @@ export const enviroenment = {
  jaeger: {
   reservo: {
    get: host + '/jaeger/reservo'
+  },
+  polaris : {
+   get: host + '/jaeger/polaris'
   }
  },
 

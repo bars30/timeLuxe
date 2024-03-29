@@ -1,5 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RequestService } from 'src/app/services/request.service';
+import { RequestModS } from 'src/app/models/requestmodel';
+import { enviroenment } from 'src/enviroenments/enviroenment';
 
 @Component({
   selector: 'app-jaeger',
@@ -11,19 +14,19 @@ import { CommonModule } from '@angular/common';
 export class JaegerComponent {
   @Input() collectionsJaeger: any = []
   collectionsJaegerAll: any = []
+  collectionsJaegerPolaris: any = []
+
+  constructor(private req: RequestService){}
 
   ngOnInit(){
-    this.collectionsJaegerAll = this.collectionsJaeger
+    this.collectionsJaegerAll = this.collectionsJaeger;
+
   }
   show(num: number){
     if(num  == 1){
-      
-    } else if(num  == 2){
-      
-    } else if(num  == 3){
-      
+      this.collectionsJaegerAll = this.collectionsJaeger
     } else {
-      
+      this.collectionsJaegerAll = this.collectionsJaegerPolaris
     }
   }
 } 
