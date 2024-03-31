@@ -70,7 +70,8 @@
  transition: all 0.8s ease-in;
 }
 .watches h2 {
- color: #186e47;
+    color: #ffffff;
+    font-weight: 900;
 }
 label {
  font-size: 20px;
@@ -94,7 +95,8 @@ label span {
 }
 label span:hover,
 input[type="radio"]:checked + span  {
- background-color: #bfcfae;
+    background-color: #ffffff;
+    margin-bottom: 16px;
 }
 label span:before {
  content: "";
@@ -204,6 +206,7 @@ color: gray;
 .watches {
     /* background-color: #e6eedd; */
     background-color: #adbbce;
+    padding: 47px 0;
 }
 
 .spinner_cont {
