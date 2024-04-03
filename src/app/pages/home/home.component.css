@@ -1,5 +1,5 @@
 .sect1 {
- height: 95vh;
+ /* height: 95vh; */
  position: relative;
  overflow: hidden;
 }
@@ -29,12 +29,13 @@ h1 span {
 .p {
  padding: 225px 0;
 }
-.sectBrand {
- padding: 25px 0;
+.sectBrand[_ngcontent-ng-c1124395094] {
+    padding: 56px 0 25px 0;
 }
 .sectBrand h2 {
  color: #0a693c;
  font-size: 33px;
+ margin-top: 47px;
 }
 .brand_desc img {
  width: 100%;
@@ -50,10 +51,10 @@ h1 span {
  margin-bottom: 26px;
 }
 .brand_cont img:nth-child(1) {
- width: 45px;
+ width: 45px !important;
 }
 .brand_cont img:nth-child(2) {
- width: 162px;
+ width: 162px !important;
 }
 .brand_name {
  width: 45%;
@@ -115,6 +116,7 @@ h1 span {
  background-color: #1b7d51;
  padding: 56px 0;
  position: relative;
+ overflow: hidden;
 }
 .choose h2 {
  padding-left: 11%;
@@ -322,122 +324,306 @@ video {
 .vd2 {
     display: none;
 }
+.vd3 {
+    display: none;
+}
 
-@media only screen and (max-width: 1280px){
-    .vd1 {
+
+@media only screen and (max-width: 1250px){
+    .quest_cont_adapt {
+        flex-direction: column-reverse;
+    }
+    .question_img_cont[_ngcontent-ng-c1124395094] {
+        width: 32%;
+        padding: 9px 0;
+    }
+    .question_container_gen[_ngcontent-ng-c1124395094] {
+        width: 100%;
+    }
+    .inf1::after, .inf1::before, .inf2::after, .inf2::before {
         display: none;
     }
+    /* .question_container_gen[_ngcontent-ng-c3675128556] {
+        width: 100%;
+    } */
+}
+@media only screen and (max-width: 1060px){
     .vd2 {
         display: block;
     }
-    .quest_cont_adapt {
-        flex-direction: column-reverse;
-        position: relative;
+    .vd1 {
+        display: none;
     }
-    .question_img_cont {
-        position: absolute;
-        top: 0;
-        right: 0;
+    h1 {
+        font-size: 47px;
+        line-height: 56px;
     }
-}
-@media only screen and (max-width: 1024px){
-    .logos-slide img {
-        height: 31px ;
+    .text_cont[_ngcontent-ng-c3675128556] p[_ngcontent-ng-c3675128556] {
+        width: 59%;
     }
-    .logos-slide[_ngcontent-ng-c217482463] img[_ngcontent-ng-c217482463] {
-        height: 31px;
-        margin: 0 15px;
+    .brand_name[_ngcontent-ng-c3675128556] {
+        width: 49%;
     }
-}
-@media only screen and (max-width: 800px){
-    .text_cont[_ngcontent-ng-c217482463] {
-        position: absolute;
-        top: 17%;
-        left: 7.5%;
+    .brand_cont[_ngcontent-ng-c3675128556] img[_ngcontent-ng-c3675128556]:nth-child(2) {
+        width: 124px;
     }
-    h1[_ngcontent-ng-c217482463] {
-        font-size: 45px;
-        color: white;
-        font-weight: 900;
-        font-style: italic;
-        line-height: 48px;
+    .brand_cont[_ngcontent-ng-c3675128556] img[_ngcontent-ng-c3675128556]:nth-child(1) {
+        width: 30px;
     }
-    .text_cont[_ngcontent-ng-c217482463] p[_ngcontent-ng-c217482463] {
-        width: 61%;
-        margin-top: 10px;
-        color: white;
+    .brand_desc[_ngcontent-ng-c3675128556] {
+        width: 40%;
     }
-    .sectBrand[_ngcontent-ng-c217482463] h2[_ngcontent-ng-c217482463] {
-        color: #0a693c;
-        font-size: 28px;
-    }
-    .brand_name[_ngcontent-ng-c217482463] {
-        width: 51%;
-    }
-    .brand_desc[_ngcontent-ng-c217482463] {
-        width: 41%;
-    }
-    .brand_cont[_ngcontent-ng-c217482463] img[_ngcontent-ng-c217482463]:nth-child(1) {
-        width: 37px;
-    }
-    .brand_cont[_ngcontent-ng-c217482463] img[_ngcontent-ng-c217482463]:nth-child(2) {
-        width: 117px;
-    }
-    .logos[_ngcontent-ng-c217482463] {
+    .logos[_ngcontent-ng-c3675128556] {
         overflow: hidden;
-        padding: 30px 0 22px 0;
+        padding: 12px 0 25px 0;
     }
-    .logos-slide[_ngcontent-ng-c217482463][_ngcontent-ng-c217482463] img[_ngcontent-ng-c217482463][_ngcontent-ng-c217482463] {
-        height: 22px;
-        margin: 0 12px;
+    .logos-slide[_ngcontent-ng-c3675128556] img[_ngcontent-ng-c3675128556] {
+        height: 25px;
     }
-    .choose_cont[_ngcontent-ng-c217482463] {
-        width: 77%;
-    }
-    .choose[_ngcontent-ng-c217482463] h2[_ngcontent-ng-c217482463] {
-        padding-left: 11%;
-        font-size: 38px;
-    }
-    .choose_cont[_ngcontent-ng-c217482463] {
-        width: 77%;
+    .choose_cont[_ngcontent-ng-c3675128556] {
+        width: 93%;
         margin: auto;
-        padding: 6px 0;
+        padding: 22px 0;
     }
-    .question[_ngcontent-ng-c217482463] {
-        padding: 57px 0;
-    }
-    .question_img_cont[_ngcontent-ng-c217482463] {
-        position: static;
-        padding: 7px 0;
-    }
-    .question_container_gen[_ngcontent-ng-c217482463] {
+    .question_container_gen[_ngcontent-ng-c3675128556] {
         width: 100%;
     }
-    .canvas_cont[_ngcontent-ng-c217482463] h2[_ngcontent-ng-c217482463] {
+    .canvas_cont[_ngcontent-ng-c3675128556] h2[_ngcontent-ng-c3675128556] {
+        position: absolute;
+        z-index: 2;
+        color: white;
         font-size: 3rem;
     }
-}
-@media only screen and (max-width: 600px){
-    .vd2 {
-    transform: scale(1.5);
+    .question[_ngcontent-ng-c3675128556] {
+        padding: 64px 0;
     }
-    h1[_ngcontent-ng-c217482463][_ngcontent-ng-c217482463] {
+    .question_container_gen[_ngcontent-ng-c2743537407] {
+        width: 100% !important;
+    }
+    .question_container_gen[_ngcontent-ng-c1177763439] {
+        width: 100% !important;
+    }
+}
+.vd4 {
+    display: none;
+}
+@media only screen and (max-width: 850px){
+    h1[_ngcontent-ng-c3675128556] {
         font-size: 34px;
-        color: white;
-        font-weight: 900;
-        font-style: italic;
-        line-height: 39px;
+        line-height: 40px;
     }
-    .text_cont[_ngcontent-ng-c217482463][_ngcontent-ng-c217482463] p[_ngcontent-ng-c217482463][_ngcontent-ng-c217482463] {
-        width: 72%;
+    .text_cont[_ngcontent-ng-c3675128556][_ngcontent-ng-c3675128556] p[_ngcontent-ng-c3675128556][_ngcontent-ng-c3675128556] {
+        width: 64%;
+        font-size: 13px;
+    }
+    .sectBrand[_ngcontent-ng-c3675128556] h2[_ngcontent-ng-c3675128556] {
+        color: #0a693c;
+        font-size: 26px;
+        margin-top: 43px;
+    }
+    .brand_name[_ngcontent-ng-c3675128556][_ngcontent-ng-c3675128556] {
+        width: 53%;
+    }
+    .brand_desc[_ngcontent-ng-c3675128556][_ngcontent-ng-c3675128556] {
+        width: 42%;
+    }
+    .logos-slide[_ngcontent-ng-c3675128556][_ngcontent-ng-c3675128556] img[_ngcontent-ng-c3675128556][_ngcontent-ng-c3675128556] {
+        height: 21px;
+    }
+    .vd3 {
+        display: block;
+    }
+    .vd2, .vd1 {
+        display: none;
+    }
+    /* .text_cont[_ngcontent-ng-c2743537407] {
+        position: absolute;
+        top: 12%;
+        left: 7.5%;
+    } */
+    h1[_ngcontent-ng-c2743537407] {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .text_cont[_ngcontent-ng-c2743537407] p[_ngcontent-ng-c2743537407] {
+        width: 70%;
+        font-size: 12px;
+    }
+    .brand_desc[_ngcontent-ng-c2743537407] {
+        width: 41%;
+    }
+    .logos[_ngcontent-ng-c2743537407] {
+        overflow: hidden;
+        padding: 8px 0 25px 0;
+    }
+    .logos-slide[_ngcontent-ng-c2743537407] img[_ngcontent-ng-c2743537407] {
+        height: 17px;
+        margin: 0 15px;
+    }
+    .choose_cont[_ngcontent-ng-c2743537407] {
+        width: 100%;
+    }
+    .question_container_gen[_ngcontent-ng-c2743537407] {
+        width: 100% !important;
+    }
+    .canvas_cont[_ngcontent-ng-c2743537407] h2[_ngcontent-ng-c2743537407] {
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-size: 2rem !important;
     }
 }
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 637px){
+    .vd4 {
+        display: block;
+    }
+    .vd1, .vd2, .vd3 {
+        display: none;
+    }
+    .text_cont[_ngcontent-ng-c1177763439] {
+        position: absolute;
+        top: 19%;
+        left: 7.5%;
+    }
+    h1[_ngcontent-ng-c1177763439] {
+        font-size: 35px;
+        line-height: 38px;
+    }
+    .text_cont[_ngcontent-ng-c1177763439] p[_ngcontent-ng-c1177763439] {
+        width: 73%;
+        margin-top: 11px;
+        color: white;
+    }
+    .brand_cont[_ngcontent-ng-c1177763439] img[_ngcontent-ng-c1177763439]:nth-child(1) {
+        width: 31px !important;
+    }
+    .brand_cont[_ngcontent-ng-c1177763439] img[_ngcontent-ng-c1177763439]:nth-child(2) {
+        width: 132px !important;
+    }
+    .brand_name[_ngcontent-ng-c1177763439] {
+        width:58%;
+    }
+    .brand_desc[_ngcontent-ng-c1177763439] {
+        width: 38%;
+    }
+    .logos[_ngcontent-ng-c1177763439] {
+        overflow: hidden;
+        padding: 2px 0 18px 0;
+    }
+    .logos-slide[_ngcontent-ng-c1177763439] img[_ngcontent-ng-c1177763439] {
+        height: 18px !important;
+        margin: 0 9px !important;
+    }
+    .choose_cont[_ngcontent-ng-c1177763439] {
+        width: 100%;
+        margin: auto;
+        padding: 0 0 18px 0;
+    }
+    .choose[_ngcontent-ng-c1177763439] h2[_ngcontent-ng-c1177763439] {
+        padding-left: 11%;
+        font-size: 29px;
+    }
+    .choose_item[_ngcontent-ng-c1177763439] h3[_ngcontent-ng-c1177763439] {
+        color: #efe0b4;
+        margin-bottom: 6px;
+        font-size: 20px;
+    }
+    .choose_item[_ngcontent-ng-c1177763439] p[_ngcontent-ng-c1177763439] {
+        font-size: 14px;
+    }
+    .question[_ngcontent-ng-c1177763439] {
+        padding: 41px 0;
+    }
+    .question[_ngcontent-ng-c1177763439] .question_title[_ngcontent-ng-c1177763439] {
+        font-family: 'EB Garamond';
+        font-weight: 900;
+        font-size: 25px;
+        color: #1b7d51;
+        margin-bottom: 14px;
+    }
+    .question_header[_ngcontent-ng-c1177763439] {
+        margin-bottom: 5px;
+    }
+    .question_answer[_ngcontent-ng-c1177763439] {
+        padding: 0 0 0 7%;
+        font-size: 14px;
+    }
+    .canvas_cont[_ngcontent-ng-c1177763439] h2[_ngcontent-ng-c1177763439] {
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 455px){
+    h1[_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439] {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .text_cont[_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439] p[_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439] {
+        width: 83%;
+        margin-top: 11px;
+        color: white;
+        font-size: 13px !important;
+    }
+    .sectBrand[_ngcontent-ng-c1177763439] h2[_ngcontent-ng-c1177763439] {
+        color: #0a693c;
+        font-size: 18px;
+        margin-top: 21px;
+    }
+    .brand_item[_ngcontent-ng-c1177763439] {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        position: relative;
+        height: 230px
+    }
+    .brand_item p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .brand_item:nth-child(1)[_ngcontent-ng-c1177763439] p[_ngcontent-ng-c1177763439] {
+        position: absolute;
+        bottom: 0;
+        left: 23px;
+        right: -12px;
+        width: 163%;
+    }
+    .brand_item:nth-child(1){
+        height: 193px !important;
+    }
+    .brand_item:nth-child(2)[_ngcontent-ng-c1177763439] p[_ngcontent-ng-c1177763439] {
+        position: absolute;
+        bottom: 0;
+        left: -117px;
+        right: -66px;
+        width: 163%;
+    }
+    .choose_item[_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439] p[_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439] {
+        font-size: 13px;
+    }
+    .question_header[_ngcontent-ng-c1177763439] {
+        font-size: 16px;
+    }
+    .canvas_cont[_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439] h2[_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439] {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 375px){
+    h1[_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439] {
+        font-size: 26px;
+        line-height: 33px;
+    }
+    .sectBrand[_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439] h2[_ngcontent-ng-c1177763439][_ngcontent-ng-c1177763439] {
+        color: #0a693c;
+        font-size: 16px;
+    }
+    .canvas_cont .f_p, .canvas_cont .f_p2, .canvas_cont .f_p3 {
+        left: 8%;
+        width: 65%;
+        font-size: 12px;
+    }
+}
 
