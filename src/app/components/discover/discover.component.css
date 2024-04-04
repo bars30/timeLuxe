@@ -1,7 +1,3 @@
-/* img {
- width: 100%;
-} */
-
 
 .discover {
  width: 100%;
@@ -18,34 +14,77 @@
  right: 22px;
  font-size: 40px;
  cursor: pointer;
+ padding: 15px;
+    border-radius: 15px;
+    transition: .25s ease-in;
 }
-.swiper-container {
- width: 100%;
- height: 100%;
+.close:hover {
+ background-color: white;
+   
 }
-.swiper-slide img {
- width: 100%;
- height: auto;
+h1 {
+ font-family: 'EB Garamond';
+ font-weight: 900;
+ font-size: 36px;
+ text-align: center;
+ color: #32452d;
 }
-.carousel {
- display: flex;
- overflow-x: scroll;
- scroll-snap-type: x mandatory;
- -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+p {
+ font-weight: 600;
+    font-size: 19px;
+    text-align: center;
 }
-
-.carousel img {
- flex: 0 0 auto;
- width: 25%;
- scroll-snap-align: start;
+.img_cont {
+ text-align: center;
+ padding-top: 15px;
 }
-.left {
- left: 0;
+.img_cont img {
+ border-radius: 16px;
+ box-shadow: 2px 5px 15px #1f3d57;
+ width: 34%;
 }
-
-.right {
- right: 0;
+@media only screen and (max-width: 1120px){
+ .img_cont[_ngcontent-ng-c3138278091] img[_ngcontent-ng-c3138278091] {
+  width: 41%;
+ }
 }
-
-
+@media only screen and (max-width: 970px){
+ .img_cont[_ngcontent-ng-c3138278091] img[_ngcontent-ng-c3138278091] {
+  width: 47%;
+ }
+}
+@media only screen and (max-width: 550px){
+ h1[_ngcontent-ng-c3138278091] {
+  font-family: 'EB Garamond';
+  font-weight: 900;
+  font-size: 28px;
+  margin-top: 27px;
+ }
+ .img_cont[_ngcontent-ng-c3138278091] img[_ngcontent-ng-c3138278091] {
+  width: 53%;
+ }
+}
+@media only screen and (max-width: 410px){
+ .close[_ngcontent-ng-c3138278091] {
+     position: absolute;
+     top: 18px;
+     right: 22px;
+     font-size: 33px;
+ }
+ h1[_ngcontent-ng-c3138278091][_ngcontent-ng-c3138278091] {
+  font-family: 'EB Garamond';
+  font-weight: 900;
+  font-size: 21px;
+  margin-bottom: 4px;
+  margin-top: 18px;
+ }
+ p[_ngcontent-ng-c3138278091] {
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+}
+.img_cont[_ngcontent-ng-c3138278091][_ngcontent-ng-c3138278091] img[_ngcontent-ng-c3138278091][_ngcontent-ng-c3138278091] {
+ width: 79%;
+}
+}
 

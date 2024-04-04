@@ -17,14 +17,21 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'store',
+        path: 'store/:brand/:coll/:id',
         component: StoreComponent,
-        
       },
       {
-        path: 'rolexstore',
-        component: RolexStoreComponent
-      }
+        path: 'store/:id',
+        component: StoreComponent,
+      },
+      {
+        path: 'store/:coll/:id',
+        component: StoreComponent,
+      },
+      {
+        path: 'store',
+        component: StoreComponent,
+      },
     ]
   },
   {

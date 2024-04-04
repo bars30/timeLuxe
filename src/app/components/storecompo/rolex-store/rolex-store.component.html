@@ -9,8 +9,9 @@
      <div class="img_cont">
        <img [src]="item.img || item.img1" alt="">
      </div>
-     <a target="_self"
-     href="https://www.rolex.com/ru/watches/datejust/m126233-0039#/m126233-0039/dial">Discover more</a>
+     <a (click)="openDescribe(item.id, item.collection, item.model, item.img, item.url)">
+      Discover more</a>
    </div>
  </div>
 </div>
+<app-discover [object]="discoverInputObject" (sendmes)="closeDiscoverComp()" *ngIf="showDiscoverComp"></app-discover>

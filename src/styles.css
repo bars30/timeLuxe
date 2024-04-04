@@ -177,6 +177,14 @@ color: gray;
         font-size: 13px !important;
     }
 }
+app-discover {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+}
+
 
 
 
