@@ -127,5 +127,23 @@ h5 {
     background-color: #e1e1e1;
 }
 
+@media only screen and (max-width: 1005px){
+    .coll[_ngcontent-ng-c3293463953] .item[_ngcontent-ng-c3293463953] {
+        width: 31%;
+    }
+    .coll .item h4 {
+        font-size: 14px;
+        padding: 3px 7.5px;
+    }
+    .coll .item h3 {
+        /* height: fit-content; */
+        font-weight: 800;
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+    .coll .item {
+        width: 31%;
+    }
+}
 
 
