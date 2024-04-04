@@ -7,6 +7,7 @@
  position: relative;
  padding: 15px;
  overflow-y: scroll;
+ box-shadow: 2px 5px 20px #1a2418;
 }
 .close {
  position: absolute;
@@ -52,6 +53,9 @@ p {
  .img_cont[_ngcontent-ng-c3138278091] img[_ngcontent-ng-c3138278091] {
   width: 47%;
  }
+ .discover {
+  padding-top: 65px;
+ }
 }
 @media only screen and (max-width: 550px){
  h1[_ngcontent-ng-c3138278091] {
@@ -61,8 +65,13 @@ p {
   margin-top: 27px;
  }
  .img_cont[_ngcontent-ng-c3138278091] img[_ngcontent-ng-c3138278091] {
-  width: 53%;
+  width: 100%;
  }
+ .img_cont img {
+  border-radius: 16px;
+  box-shadow: 2px 5px 15px #1f3d57;
+  width: 92% !important;
+}
 }
 @media only screen and (max-width: 410px){
  .close[_ngcontent-ng-c3138278091] {
@@ -84,7 +93,7 @@ p {
   text-align: center;
 }
 .img_cont[_ngcontent-ng-c3138278091][_ngcontent-ng-c3138278091] img[_ngcontent-ng-c3138278091][_ngcontent-ng-c3138278091] {
- width: 79%;
+ /* width: 79%; */
 }
 }
 
