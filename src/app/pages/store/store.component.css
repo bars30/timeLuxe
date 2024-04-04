@@ -54,12 +54,12 @@
 }
 .bestselled_cont .item h2 {
  font-size: 19px;
- height: 53px;
  text-align: center;
  font-family: 'EB Garamond';
  font-weight: 900;
  color: #1f2a23;
  transition: all 0.8s ease-in;
+ margin-bottom: 7px;
 }
 
 .bestselled_cont .item p {
@@ -120,7 +120,7 @@ form {
  display: flex;
  justify-content: start;
  flex-wrap: wrap;
- 
+ width: 89%;
 }
 .coll .item  {
  width: 23%;
@@ -214,19 +214,6 @@ color: gray;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 app-discover {
     position: fixed;
     top: 25px;
@@ -235,11 +222,102 @@ app-discover {
     bottom: 25px;
 }
 
+@media only screen and (max-width: 1005px){
+    label[_ngcontent-ng-c2149102630] span[_ngcontent-ng-c2149102630]:hover, input[type="radio"][_ngcontent-ng-c2149102630]:checked + span[_ngcontent-ng-c2149102630] {
+        margin-bottom: 8px;
+        font-size: 16px;
+        padding: 7px 17px 7px 6px;
+    }
 
+}
+@media only screen and (max-width: 805px){
+    
+    .bestselled_gen_header[_ngcontent-ng-c2162635431] {
+        text-align: center;
+        font-size: 30px;
+    }
+    .item[_ngcontent-ng-c3293463953][_ngcontent-ng-c3293463953] h3[_ngcontent-ng-c3293463953][_ngcontent-ng-c3293463953] {
+        height: 45px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .bestselled_cont {
+        flex-wrap: wrap !important;
+        justify-content: space-around !important;
+    }
+    .bestselled_cont[_ngcontent-ng-c2149102630] .item[_ngcontent-ng-c2149102630] {
+        width: 30% !important;
+        margin-right: 16px !important;
+        margin-bottom: 15px !important;
+    }
+    .bestselled_cont[_ngcontent-ng-c2162635431] .item[_ngcontent-ng-c2162635431] {
+        width: 30%;
+        padding: 11px 19px;
+        background-color: #becdbbad;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.9s ease-in;
+        margin-right: 16px;
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+        font-weight: 500;
+        margin-bottom: 7px;
+        margin-right: 3px;
+    }
+    label span:hover, input[type="radio"]:checked + span {
+        margin-bottom: 8px;
+        font-size: 16px;
+        padding: 7px 17px 7px 6px;
+    }
+    label span:before {
+        content: "";
+        background-color: #fff;
+        width: 21px;
+        height: 21px;
+    }
+}
+@media only screen and (max-width: 605px){
+    .bestselled_cont .item {
+        width: 31% !important;
+        padding: 4px 8px !important;
+        margin-right: 8px !important;
+        margin-bottom: 15px !important;
+    }
+    .bestselled_header {
+        text-align: center;
+        font-family: 'EB Garamond';
+        color: #463209;
+        margin-bottom: 32px;
+    }
+    label[_ngcontent-ng-c2162635431] span[_ngcontent-ng-c2162635431] {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px 10px 10px;
+        border-radius: 31px;
+        transition: .25s ease;
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: 425px){
+    .bestselled_gen_header[_ngcontent-ng-c2162635431][_ngcontent-ng-c2162635431] {
+        text-align: center;
+        font-size: 25px;
+    }
+    .bestselled_cont[_ngcontent-ng-c2162635431] .item[_ngcontent-ng-c2162635431] {
+        width: 42% !important;
+    }
 
-
-
-
+}
+@media only screen and (max-width: 375px){
+    .bestselled_gen_header[_ngcontent-ng-c2162635431][_ngcontent-ng-c2162635431][_ngcontent-ng-c2162635431] {
+        text-align: center;
+        font-size: 19px;
+    }
+}
 
 
 

@@ -36,6 +36,10 @@ export class CartierComponent {
       this.req.getData<RequestModS>(enviroenment.cartier.panterede.get).subscribe((res)=>{
         console.log(res);
         for (let index = 0; index < res.cont.length; index++) {
+          if(index == 22 || index == 33 || index == 34 ||
+            index == 35 || index == 36 || index == 41 ){
+              return
+          }
           this.collectioncartierpanterede.push(res.cont[index])
         }   
         })

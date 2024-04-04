@@ -9,14 +9,15 @@
  </div>
  <div class="bestselled_cont">
   <div class="item" *ngFor="let watch of bestselledWatches">
-   <h2>{{watch.model}}</h2>
+   <h2>{{watch.brand}}</h2>
    <img [src]="watch.img" alt="image of watch">
-   <p>{{watch.price}}</p>
   </div>
  </div>
 </div>
 <div class="watches">
- <h2 class="bestselled_gen_header">Comprehensive List of Watches from Top Brands</h2>
+ <div class="container">
+  <h2 class="bestselled_gen_header">Comprehensive List of Watches from Top Brands</h2>
+ </div>
  <div class="container">
   <form>
    <label>
