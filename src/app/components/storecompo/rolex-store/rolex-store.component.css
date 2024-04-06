@@ -141,6 +141,12 @@ color: gray;
 
 
 }
+@media only screen and (max-width: 375px){
+    .coll .item a {
+        
+        font-size: 11px;
+    }
+}
 @media only screen and (max-width: 600px){
     .coll .item {
         width: 48% !important;

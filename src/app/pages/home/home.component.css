@@ -472,6 +472,12 @@ video {
         color: white;
         font-size: 2rem !important;
     }
+    canvas{
+        /* clip-path: inset(8px 5% 8px 5%); */
+        /* width: 1080px; */
+        /* height: 1920px; */
+        /* transform: scale(2.1) !important; */
+    }
 }
 @media only screen and (max-width: 637px){
     .vd4 {

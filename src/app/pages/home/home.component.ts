@@ -228,6 +228,60 @@ export class HomeComponent {
   //     context.drawImage(images[ball.frame], 0, 0, window.innerWidth, window.innerHeight);
   //    }
   //   }
+  // watch() {
+  //   this.canvas.nativeElement.width = window.innerWidth;
+  //   this.canvas.nativeElement.height = window.innerHeight;
+  
+  //   const context = this.canvas.nativeElement.getContext("2d");
+  //   const frameCount = 79;
+  //   const images: any = [];
+  
+  //   for (let i = 0; i < frameCount; i++) {
+  //     const img = new Image();
+  //     img.src = `/assets/img/watch/${i + 1}.png`;
+  //     images.push(img);
+  //   }
+  
+  //   let ball = { frame: 0 };
+  
+  //   gsap.to(ball, {
+  //     frame: frameCount - 1,
+  //     snap: "frame",
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       scrub: true,
+  //       pin: "canvas",
+  //       end: "500%",
+  //     },
+  //     onUpdate: render,
+  //   });
+  
+  //   images[0].onload = render;
+  
+  //   gsap.fromTo(
+  //     ".ball-text",
+  //     {
+  //       opacity: 0,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       scrollTrigger: {
+  //         scrub: 1,
+  //         start: "50%",
+  //         end: "60%",
+  //       },
+  //       onComplete: () => {
+  //         gsap.to(".ball-text", { opacity: 0 });
+  //       },
+  //     }
+  //   );
+  
+  //   function render() {
+  //     if (!context) return;
+  //     context.clearRect(0, 0, window.innerWidth, window.innerHeight);
+  //     context.drawImage(images[ball.frame], 0, 0, window.innerWidth, window.innerHeight);
+  //   }
+  // }
   watch() {
     this.canvas.nativeElement.width = window.innerWidth;
     this.canvas.nativeElement.height = window.innerHeight;
@@ -236,9 +290,15 @@ export class HomeComponent {
     const frameCount = 79;
     const images: any = [];
   
+    const isMobile = window.innerWidth <= 850;
+  
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
-      img.src = `/assets/img/watch/${i + 1}.png`;
+      if (isMobile) {
+        img.src = `/assets/img/watch/mobile/${i + 1}.png`;
+      } else {
+        img.src = `/assets/img/watch/${i + 1}.png`;
+      }
       images.push(img);
     }
   
@@ -282,5 +342,6 @@ export class HomeComponent {
       context.drawImage(images[ball.frame], 0, 0, window.innerWidth, window.innerHeight);
     }
   }
+  
   
 }
