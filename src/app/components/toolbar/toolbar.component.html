@@ -1,22 +1,20 @@
 <div class="toolbar">
- <div class="container_flex">
-  <div class="brand_name_logo">
-   <h2>Time Luxe</h2>
+   <div class="container_flex">
+    <div class="brand_name_logo">
+     <h2>Time Luxe</h2>
+    </div>
+    <div class="a_cont" (click)="closeMenu()"  [class.showAcont]="menuVariable">
+     <a [routerLink]="''" [class.showAcont]="menuVariable">Home</a>
+     <a [routerLink]="'store'" [class.showAcont]="menuVariable">Store</a>
+     <a [routerLink]="'about'" [class.showAcont]="menuVariable">About</a>
+     <a [routerLink]="'services'" [class.showAcont]="menuVariable">Services</a>
+     <a [routerLink]="'contact'" [class.showAcont]="menuVariable">Contact</a>
+    </div>
+    <div #menuIcon [class.padd]="menuVariable" class="menu-icon" (click)="showMenu(nav, first_span, third_span, menuIcon)">
+     <span #first_span [class.spanRotate1]="menuVariable"></span>
+     <span *ngIf="showSpan"></span>
+     <span #third_span [class.spanRotate2]="menuVariable"></span>
+    </div>
+   </div>
   </div>
-  <div class="a_cont">
-   <a [routerLink]="''">Home</a>
-   <a [routerLink]="'store'">Store</a>
-   <a [routerLink]="'about'">About</a>
-   <a [routerLink]="'services'">Services</a>
-   <a [routerLink]="'contact'">Contact</a>
-  </div>
- </div>
-</div>
-
-
-
-
-
-
-
-
+  

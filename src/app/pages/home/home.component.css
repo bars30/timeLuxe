@@ -575,7 +575,7 @@ video {
     .sectBrand[_ngcontent-ng-c1177763439] h2[_ngcontent-ng-c1177763439] {
         color: #0a693c;
         font-size: 18px;
-        margin-top: 21px;
+        /* margin-top: 21px; */
     }
     .brand_item[_ngcontent-ng-c1177763439] {
         display: flex;

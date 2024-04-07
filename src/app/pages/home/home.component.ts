@@ -295,7 +295,7 @@ export class HomeComponent {
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
       if (isMobile) {
-        img.src = `/assets/img/watch/mobile/${i + 1}.png`;
+        img.src = `/assets/img/watch/mobile2/${i + 1}.png`;
       } else {
         img.src = `/assets/img/watch/${i + 1}.png`;
       }

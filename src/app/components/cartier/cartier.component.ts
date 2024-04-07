@@ -3,15 +3,27 @@ import { CommonModule } from '@angular/common';
 import { RequestService } from 'src/app/services/request.service';
 import { RequestModS } from 'src/app/models/requestmodel';
 import { enviroenment } from 'src/enviroenments/enviroenment';
+import { DescripeservService } from 'src/app/services/descripeserv.service';
+import { DiscoverComponent } from '../discover/discover.component';
 
 @Component({
   selector: 'app-cartier',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, DiscoverComponent],
   templateUrl: './cartier.component.html',
   styleUrls: ['./cartier.component.css']
 })
 export class CartierComponent {
+  constructor(private descripserv: DescripeservService,
+    private req: RequestService
+  ){}
+  showDiscoverComp = this.descripserv.showDiscoverComp
+  general: boolean = true;
+  discoverInputObject = this.descripserv.discoverInputObject;
+  openDescribe = this.descripserv.openDescribe;
+  closeDiscoverComp = this.descripserv.closeDiscoverComp
+
+
   @Input() collectionsCartier: any = [];
   collectionsCartierAll: any = this.collectionsCartier;
   collectioncartierantosde: any = []
@@ -23,9 +35,6 @@ export class CartierComponent {
   show2: boolean = false;
   show3: boolean = false;
   show4: boolean = false;
-  constructor(private req: RequestService){
-
-  }
   ngOnInit(){
     this.req.getData<RequestModS>(enviroenment.cartier.antosde.get).subscribe((res)=>{
       console.log(res);

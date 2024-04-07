@@ -16,6 +16,10 @@
        <img [src]="item.img || item.img1" alt="">
      </div>
      <h5>{{item.descrip}}</h5>
+     <a (click)="openDescribe(item.id, item.descrip, item.model, item.img, item.url)">
+      Discover more</a>
    </div>
  </div>
  </div>
+ 
+<app-discover [object]="discoverInputObject" (sendmes)="closeDiscoverComp()" *ngIf="showDiscoverComp"></app-discover> 

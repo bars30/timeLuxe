@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rolex-store',
-  standalone: true,
+  standalone: true, 
   imports: [CommonModule, RouterModule, DiscoverComponent],
   templateUrl: './rolex-store.component.html',
   styleUrls: ['./rolex-store.component.css']

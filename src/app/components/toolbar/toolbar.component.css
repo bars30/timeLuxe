@@ -23,12 +23,109 @@ h2 {
 img {
  width: 45px;
 }
-@media only screen and (max-width: 650px){
+
+.spanRotate1 {
+ transform: rotate(45deg);
+}
+.spanRotate2 {
+ transform: rotate(-45deg);
+ margin-top: -3px !important;
+}
+menu-icon {
+ display: inline-block;
+ position: relative;
+ right: 0;
+ top: 9px;
+ margin-left: 15px;
+ z-index: 17;
+}
+.menu-icon span {
+ width: 40px;
+ height: 5px; 
+ background: white;
+ display: block;
+ transition: transform 0.4s ease; /* Add transition property */
+}
+.menu-icon span:nth-child(2){
+ margin: 8px 0;
+}
+.menu-icon {
+ display: none;
+}
+.spanRotate1 {
+ transform: rotate(45deg);
+}
+.spanRotate2 {
+ transform: rotate(-45deg);
+ margin-top: -3px !important;
+}
+.padd {
+ padding-top: 8px;
+}
+.showAcont {
+ display: block !important;
+ padding:  5px 0;
+}
+.show a {
+ display: block;
+}
+@media only screen and (max-width: 1010px){
  .a_cont {
   display: none;
+  position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #136c3c;
+    bottom: 0;
+    z-index: 12;
+    right: 0;
+    padding: 10%;
  }
+ .a_cont a {
+  display: none;
+  transition: display 0.4s ease;
+ }
+ .a_cont a:nth-child(1) {
+  transition-delay: 0;
+ }
+ .a_cont a:nth-child(2) {
+  transition-delay: 0.15s;
+ }
+ .a_cont a:nth-child(3) {
+  transition-delay: 0.20s;
+ }
+ .a_cont a:nth-child(4) {
+  transition-delay: 0.25s;
+ }
+ .a_cont a:nth-child(5) {
+  transition-delay: 0.30s;
+ }
+ .menu-icon {
+  display: block;
+ }
+ .spanRotate1 {
+     transform: rotate(45deg);
+ }
+ .spanRotate2 {
+     transform: rotate(-45deg);
+     margin-top: -3px !important;
+ }
+ .menuClass {
+     right: 0;
+     transition: 0.4s ease-in-out;
+ }
+ .menu-class {
+     transition: 0.4s ease-in-out;
+ }
+ .menu-icon {
+  display: inline-block;
+  position: relative;
+  right: 0;
+  top: 9px;
+  margin-left: 15px;
+  z-index: 17;
+  
 }
-
-
+}
 
 

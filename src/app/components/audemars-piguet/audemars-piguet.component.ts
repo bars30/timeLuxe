@@ -3,15 +3,24 @@ import { CommonModule } from '@angular/common';
 import { RequestService } from 'src/app/services/request.service';
 import { enviroenment } from 'src/enviroenments/enviroenment';
 import { RequestModS } from 'src/app/models/requestmodel';
+import { DescripeservService } from 'src/app/services/descripeserv.service';
+import { DiscoverComponent } from '../discover/discover.component';
 
 @Component({
   selector: 'app-audemars-piguet',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, DiscoverComponent],
   templateUrl: './audemars-piguet.component.html',
   styleUrls: ['./audemars-piguet.component.css']
 })
 export class AudemarsPiguetComponent {
+  showDiscoverComp = this.descripserv.showDiscoverComp
+  general: boolean = true;
+  discoverInputObject = this.descripserv.discoverInputObject;
+  openDescribe = this.descripserv.openDescribe;
+  closeDiscoverComp = this.descripserv.closeDiscoverComp
+
+
   @Input() collectionsAudemarsPiguet: any = []
   collectionsAudemarsPiguetRoyalOak: any = []
   collectionsAudemarsPiguetRoyalOakOffshore: any = []
@@ -40,7 +49,9 @@ export class AudemarsPiguetComponent {
        this.show3 = false
     }
   }
-  constructor(private req: RequestService){}
+  constructor(private req: RequestService,
+    private descripserv: DescripeservService
+  ){}
   ngOnInit(){
     this.req.getData<RequestModS>(enviroenment.audemarspiguet.royalOak.get).subscribe((res)=>{
       console.log(res);
